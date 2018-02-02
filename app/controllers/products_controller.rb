@@ -6,6 +6,8 @@ class ProductsController < ApplicationController
   def index
     @products = Product.all
   end
+  # Load the associated view with access to @products:
+  # /app/views/products/index.html.erb
 
   # GET /products/1
   # GET /products/1.json
